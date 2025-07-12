@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Universal Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-python"></i> App Universal</h1>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+                <button class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i> Início
+                </a></li>
+                <li><a href="#tasks" class="nav-link" data-section="tasks">
+                    <i class="fas fa-tasks"></i> Tarefas
+                </a></li>
+                                <li><a href="#notes" class="nav-link" data-section="notes">
+                    <i class="fas fa-sticky-note"></i> Notas
+                </a></li>
+                <li><a href="#apps" class="nav-link" data-section="apps">
+                    <i class="fas fa-external-link-alt"></i> Aplicações
+                </a></li>
+ 
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="welcome-card">
+                    <h2>Bem-vindo ao App Universal Python!</h2>
+                    <p>Este aplicativo foi criado com Python Flask e funciona perfeitamente tanto no seu computador quanto no seu celular.</p>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-python"></i>
+                            <h3>Python Flask</h3>
+                            <p>Backend robusto e confiável</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Responsivo</h3>
+                            <p>Adapta-se a qualquer dispositivo</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-database"></i>
+                            <h3>Persistente</h3>
+                            <p>Dados salvos localmente</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tasks Section -->
+            <section id="tasks" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tasks"></i> Gerenciador de Tarefas</h2>
+                    <button class="add-btn" id="addTaskBtn">
+                        <i class="fas fa-plus"></i> Nova Tarefa
+                    </button>
+                </div>
+                <div class="tasks-container">
+                    <div class="task-input-container" id="taskInputContainer" style="display: none;">
+                        <input type="text" id="taskInput" placeholder="Digite sua tarefa...">
+                        <button id="saveTaskBtn" class="save-btn">
+                            <i class="fas fa-save"></i>
+                        </button>
+                    </div>
+                    <div class="tasks-list" id="tasksList">
+                        <!-- Tasks will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notes Section -->
+            <section id="notes" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-sticky-note"></i> Bloco de Notas</h2>
+                    <button class="add-btn" id="addNoteBtn">
+                        <i class="fas fa-plus"></i> Nova Nota
+                    </button>
+                </div>
+                <div class="notes-container">
+                    <div class="note-input-container" id="noteInputContainer" style="display: none;">
+                        <input type="text" id="noteTitleInput" placeholder="Título da nota...">
+                        <textarea id="noteContentInput" placeholder="Conteúdo da nota..."></textarea>
+                        <button id="saveNoteBtn" class="save-btn">
+                            <i class="fas fa-save"></i> Salvar
+                        </button>
+                    </div>
+                    <div class="notes-list" id="notesList">
+                        <!-- Notes will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Apps Section -->
+            <section id="apps" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-external-link-alt"></i> Aplicações Externas</h2>
+                </div>
+                <div class="apps-container" id="appsContainer">
+                    <!-- Apps serão carregados aqui via JS -->
+                </div>
+                <button class="add-btn" id="showAddAppFormBtn" style="margin-top:1rem;">
+                    <i class="fas fa-plus"></i> Nova Aplicação
+                </button>
+                <div id="addAppForm" style="display:none; margin-top:1rem;">
+                    <input type="text" id="appName" placeholder="Nome da aplicação">
+                    <input type="text" id="appDescription" placeholder="Descrição (opcional)">
+                    <input type="text" id="appIcon" placeholder="Classe do ícone (ex: fas fa-graduation-cap)">
+                    <input type="text" id="appUrl" placeholder="URL da aplicação">
+                    <button id="addAppBtn">Adicionar</button>
+                    <button id="cancelAddAppBtn" type="button">Cancelar</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 
