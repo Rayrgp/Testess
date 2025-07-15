@@ -81,7 +81,7 @@ def pesquisar_no_chrome(pesquisa,):
         print(f"Erro ao realizar pesquisa: {e}")
         raise
 
-def pesquisas_aleatorias_pc(repeticoes=30, tempo_espera=4, x=551, y=505):
+def pesquisas_aleatorias_pc(repeticoes=40, tempo_espera=4, x=551, y=505):
     """Realiza pesquisas aleatórias no Chrome."""
     try:
         abrir_chrome()
@@ -332,13 +332,15 @@ if __name__ == "__main__":
         print("DICA: Mova o mouse para o canto superior esquerdo para parar a automação")
         start_inicial()
         
-        missoes()
-        print("Missões concluídas com sucesso!")
-        fechar_chrome()
-
         pesquisas_aleatorias_pc()
         print("Pesquisas concluídas com sucesso!") 
         fechar_chrome()
+
+        '''missoes()
+        print("Missões concluídas com sucesso!")
+        fechar_chrome()'''
+
+        
 
         
 
