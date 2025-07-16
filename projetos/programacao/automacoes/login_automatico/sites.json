@@ -1,10 +1,9 @@
 {
-  "sites": [
-    "https://www.github.com/login",
-    "https://academico.iff.edu.br/qacademico/index.asp?t=1001",
-    "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=5e3ce6c0-2b1f-4285-8d4b-75ee78787346&scope=openId%20profile%20openid%20offline_access&redirect_uri=https%3A%2F%2Fteams.microsoft.com%2Fv2&client-request-id=019810a4-0767-7901-b83f-d69c10e479c1&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=3.28.1&client_info=1&code_challenge=1mcvrIeGkq15dJStUaQUZrCmWZshG6_3JDmLqfmOX_A&code_challenge_method=S256&prompt=select_account&nonce=019810a4-0768-773a-9859-12e6c6b42070&state=eyJpZCI6IjAxOTgxMGE0LTA3NjgtN2JkMi05ZTFhLTcwMDNhNWU5NWE2YSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7Chttps%3A%2F%2Fteams.microsoft.com%2Fv2%2F%3Fenablemcasfort21%3Dtrue",
-    "https://chatgpt.com/",
-    "https://replit.com/login",
-    "https://web.whatsapp.com/"
-  ]
+    "sites": [
+        "https://www.github.com/login",
+        "https://academico.iff.edu.br/qacademico/index.asp?t=1001",
+        "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=5e3ce6c0-2b1f-4285-8d4b-75ee78787346&scope=openId%20profile%20openid%20offline_access&redirect_uri=https%3A%2F%2Fteams.microsoft.com%2Fv2&client-request-id=019810a4-0767-7901-b83f-d69c10e479c1&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=3.28.1&client_info=1&code_challenge=1mcvrIeGkq15dJStUaQUZrCmWZshG6_3JDmLqfmOX_A&code_challenge_method=S256&prompt=select_account&nonce=019810a4-0768-773a-9859-12e6c6b42070&state=eyJpZCI6IjAxOTgxMGE0LTA3NjgtN2JkMi05ZTFhLTcwMDNhNWU5NWE2YSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7Chttps%3A%2F%2Fteams.microsoft.com%2Fv2%2F%3Fenablemcasfort21%3Dtrue",
+        "https://chatgpt.com/",
+        "https://web.whatsapp.com/"
+    ]
 }
