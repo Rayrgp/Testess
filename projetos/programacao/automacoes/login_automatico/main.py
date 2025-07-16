@@ -1,10 +1,25 @@
-import tkinter as tk
-from tkinter import ttk, messagebox
-import json
-import os
-import subprocess
-import webbrowser
-from PIL import Image, ImageTk
+try:
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+    import json
+    import os
+    import subprocess
+    import webbrowser
+    from PIL import Image, ImageTk
+
+except Exception as e:
+    print(f"Erro:{e}")
+
+    try:
+        import subprocess
+        result = subprocess.run("pip install -r requirements.txt",shell=True,capture_output=True,text=True)
+        if result.returncode != 0:
+            print("Erro ao instalar as dependências:")
+            print(result.stderr)
+        else:
+            print("Dependências instaladas com sucesso!")
+    except Exception as e:
+        print(f"Ocorreu um erro ao tentar instalar as dependências: {e}")
 
 # Paleta de cores estilo Discord
 BG_COLOR = '#2f3136'
