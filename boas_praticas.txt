@@ -1,0 +1,17 @@
+-> Explique com um comentário na hora de fazer um commit o que cada arquivo faz;
+
+-> Comente o objetivo de cada parte do código, como funções, bibliotecas, divs, etc;
+
+-> Não seja um babaca ao escrever mensagens de output, mas amigável e atencioso;
+
+-> Sempre use fontes legíveis e cores agradáveis para o usuário;
+
+-> Sempre tente fazer a interface do site ser interativa e acessível, obedecendo padrões de responsividade;
+
+-> Nomeie suas variáveis de maneira sucinta e intuitiva;
+
+-> Cite todas as dificuldades enfrentadas no arquivo README.md;
+
+-> Ao concluir uma tarefa pendente, lembre-se de sinalizá-la como concluída na aba "Issues" no Github;
+
+-> Toda documentação, nome de arquivo, variáveis, funções, etc. devem ser escritos em português.
